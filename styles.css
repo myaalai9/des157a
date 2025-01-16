@@ -1,0 +1,224 @@
+/* Start Reset */
+
+*{
+    box-sizing: border-box; 
+}
+
+h1,h2,h3,p,ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul, nav ol{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+
+/* End Reset */
+
+
+#banner{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+#star1{
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    animation: star 6s infinite; 
+    animation-delay: 1.5s;
+}
+
+#star2{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    animation: star 6s infinite; 
+}
+
+#star3{
+    position: absolute;
+    top: 66%;
+    left: 23%;
+    animation: star 3s infinite; 
+    animation-delay: 1s;
+}
+
+#star4{
+    position: absolute;
+    top: 17%;
+    left: 70%;
+    animation: star 6s infinite; 
+}
+
+#star5{
+    position: absolute;
+    top: 45%;
+    left: 90%;
+    animation: star 3s infinite; 
+    animation-delay: 1s;
+}
+
+#star6{
+    position: absolute;
+    top: 78%;
+    left: 78% ;
+    animation: star 6s infinite; 
+}
+
+@keyframes star{
+    0%, 100% { opacity: 75%;}
+    50% {opacity: 5%;}
+}
+
+#moon{
+    position: absolute;
+    top: 17%;
+    left: 36%;
+    z-index: -1;
+}
+
+#greycloud{
+    position: absolute;
+    top: 56%;
+    left: 30%;
+}
+
+#whitecloud{
+    position: absolute;
+    top: 63%;
+    left: 36%;
+    z-index: 2;
+}
+
+#whitecloud:hover{
+    cursor:pointer;
+}
+
+#whitecloud:hover ~ #sheep{
+    animation: popout 0.35s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#sheep{
+    position: absolute;
+    top: 63%;
+    left: 39%;
+    z-index: 1;
+}
+
+@keyframes popout{
+    0%{opacity: 0; top: 63%; left: 38%;}
+    1%{opacity: 1; top: 63%; left: 38%;}
+    20%{opacity: 1; top: 60%; left: 41%;}
+    30%{opacity: 1; top: 50%; left:46%;}
+    40%{opacity: 1; top: 52%; left:46%;}
+    50%{opacity: 1; top: 55%; left:49%;}
+    60%{opacity: 1; top: 60%; left:53%;}
+    70%{opacity: 1; top: 63%; left:54%;}
+    80%{opacity: 1; top: 67%; left:54%;}
+    85%{opacity: 1; top: 70%; left:54%;}
+    90%{opacity: 1; top: 73%; left:54%;}
+    95%{opacity: 1; top: 75%; left:54%;}
+    100%{opacity: 1; top: 87%; left:54%;}
+}
+
+#tagline{
+    display: flex;
+    justify-content:space-between;
+    color: rgb(167,217,244);
+}
+
+h1,h2{
+    font-family: "Jersey 25", serif;
+    font-weight: 400;
+}
+
+h1{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 160px;
+    font-size: 4em;
+    color:rgb(56,55,42);
+}
+
+.assignments{
+    color:#0d3e59;;
+    border-bottom: 2px solid;
+    font-size: 2em;
+
+}
+
+ul li{
+    list-style-type: none;
+    padding-top: 5px;
+}
+ 
+ul li a{
+    text-decoration: none;
+    font-family: "Bakbak One", serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #115376;
+}
+
+ul li a:hover{
+    color: #0a2a3b;
+}
+
+main{
+    display: flex;
+}
+
+section{
+    background-color: rgb(217,217,217,0.5);
+    margin: 10px;
+    padding: 15px 15px 18px 15px;
+    border: 1px solid rgba(255, 255, 255); 
+    border-radius: 20px;
+    flex:1;
+}
+
+body{
+    width: 1100px;
+    margin: auto;
+    align-content: center;
+    background: rgb(127,176,202);
+    background: linear-gradient(0deg, rgba(127,176,202,1) 20%, rgba(17,83,118,1) 100%);
+    padding-top: 18px;
+}
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    font-family: "Bakbak One", serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #115376;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    gap: 30px;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    font-family: "Bakbak One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    color: #115376;
+}
+
+footer address{
+    font-style: normal;
+}
