@@ -21,6 +21,18 @@ img{
 
 /* End Reset */
 
+body{
+    min-height:750px;
+    background: rgb(127,176,202);
+    background: linear-gradient(0deg, rgba(127,176,202,1) 20%, rgba(17,83,118,1) 100%);
+    background-repeat: no-repeat; padding-top: 18px;
+}
+
+#container{
+    width:70%;
+    min-width: 1000px;
+    margin:auto;
+}
 
 #banner{
     display: flex;
@@ -186,15 +198,6 @@ section{
     flex:1;
 }
 
-body{
-    width: 1100px;
-    margin: auto;
-    align-content: center;
-    background: rgb(127,176,202);
-    background: linear-gradient(0deg, rgba(127,176,202,1) 20%, rgba(17,83,118,1) 100%);
-    padding-top: 18px;
-}
-
 
 /* Footer */
 
@@ -204,7 +207,7 @@ footer{
     font-weight: 400;
     font-size: 0.9em;
     color: #115376;
-    padding-top: 5px;
+    padding-top: 12px;
     padding-bottom: 15px;
     gap: 30px;
     justify-content: center;

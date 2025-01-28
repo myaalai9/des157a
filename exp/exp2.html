@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2: Pick your favorite color</h1>
+    <h2></h2>
+    
+    <script>
+        // This program asks the user to enter their favorite color within the list provided to them and the backgroud color changes accordingly.
+
+        var color = prompt('Please enter your favorite color amongst the following colors: red, blue, green or yellow', '');
+
+        var availColors = ['red', 'blue', 'green', 'yellow']; // An array of colors
+
+        var h2 = document.querySelector('h2') 
+
+        function backgroundColor(){
+
+            for (var i = 0; i < availColors.length; i++) {
+                if (color === availColors[i]){
+                document.body.style.backgroundColor = color;
+                return; 
+                }
+            }
+            
+            h2.innerHTML = ('No valid color entered') // This targets h2 to state that there is no correct colors are chosen. 
+        
+        }
+        
+
+        backgroundColor(); // This prints out the function 
+
+    </script>
+
+</body>
+</html>
