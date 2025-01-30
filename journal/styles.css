@@ -74,6 +74,7 @@ h3{
 body{
     justify-content: center;
     width: 50%;
+    max-width: 600px; 
     margin: auto;
     background: rgb(205,199,158);
     background: linear-gradient(0deg, rgba(205,199,158,1) 6%, rgba(158,175,181,1) 75%);
