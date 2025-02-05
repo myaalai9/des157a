@@ -39,7 +39,7 @@ h1{
     left: -18%;
 }
 
-#heart1{
+.heart1{
     position:relative;
     top: -53%;
     left: 70%;
@@ -48,7 +48,7 @@ h1{
 }
 
 
-#heart2{
+.heart2{
     position:relative;
     top: -53%;
     left: -50%;
@@ -78,29 +78,29 @@ section {
 
 #section-1 {
     background-color: rgb(56, 88, 50); 
-    /* z-index: 1;  */
+    display: visible;
 }
 
-#dining-table{
+.dining-table{
     position:relative;
     /* top: 42.7%; */
     top:37.6%;
     left: -75%;
 }
 
-#static-painting{
+.static-painting{
     position:relative; 
     top: -47%;
     left: -30%;
 }
 
-#moving-painting{
+.moving-painting{
     position:relative; 
     top: -68%;
     left: 12%;
 }
 
-#moving-painting:hover{
+.moving-painting:hover{
     animation: wiggle 4s ease-in; 
 }
 
@@ -131,11 +131,11 @@ section {
 
 #section-2 {
     background-color: rgb(56, 88, 50);
+    visibility: hidden;
 }
 #section-3 {
     background-color: rgb(171, 136, 136);
-    display: flex;
-    z-index: 1;
+    visibility: hidden;
 }
 
 
