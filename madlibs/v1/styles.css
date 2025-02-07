@@ -222,13 +222,13 @@ p{
 #plate{
     position:relative;
     top: -180%;
-    left: 168%;
+    left: 190%;
     z-index: 1;
 }
 
 #wine-spill{
     position:relative;
-    top: -54.5%;
+    top: -50.5%;
     left: -40%;
     z-index: 1;
 }
