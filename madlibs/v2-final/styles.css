@@ -22,7 +22,7 @@ img{
 /* End Reset */
 
 body{
-    width:90%;
+    width:100%;
     max-width: 1200px;
     max-height:750px;
     margin:auto;
@@ -40,36 +40,10 @@ h1{
     left: -18%;
 }
 
-.heart1{
-    position:relative;
-    top: -55%;
-    left: 70%;
-
-    animation: heart 2s infinite ease;
-}
-
-
-.heart2{
-    position:relative;
-    top: -55%;
-    left: -52%;
-    animation: heart 2s infinite ease;
-}
-
-@keyframes heart {
-    0%, 100% {
-        transform: scale(0.8);
-    }
-    50%{
-        transform:scale(1.1);
-    }
-}
-
-
 section {
     display: flex;
-    justify-content: center;
     position: absolute;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -78,33 +52,45 @@ section {
 
 #section-1 {
     background-color: rgb(56, 88, 50); 
-    display: hidden;
+    visibility: visible;
 }
 
-.dining-table{
+#section-2 {
+    background-color: rgb(56, 88, 50);
+    visibility: hidden;
+}
+
+#section-2 form{
+    margin-top: 50px;
+}
+
+.table{
     position:relative;
-    /* top: 42.7%; */
-    top:36%;
-    left: -75%;
+    min-width: 500px;
+    top:45%;
+    left: -50%; 
+    z-index: 2;
 }
 
 .static-painting{
-    position:relative; 
-    top: -48%;
-    left: -30%;
+    position:relative;
+    top: -21%;
+    left: -32%; 
+    min-width: 400px;
 }
 
 .moving-painting{
-    position:relative; 
-    top: -69%;
-    left: 12%;
+    position:relative;
+    top:-40%;
+    left: 10%; 
+    min-width: 100px;
 }
 
 .moving-painting:hover{
-    animation: wiggle 4s ease-in; 
+    animation: wiggle 3s ease-in;
 }
 
-@keyframes wiggle {
+@keyframes wiggle{
     0% {
         transform-origin: 0 0;
         transform: rotate(0);
@@ -129,21 +115,37 @@ section {
     }
 }
 
-#section-2 {
-    background-color: rgb(56, 88, 50);
-    visibility: hidden;
-}
-#section-3 {
-    background-color: rgb(171, 136, 136);
-    visibility: visible;
+.heart1{
+    position: relative;
+    min-width: 30px;
+    top: -78%;
+    left: 70%;
+    animation: heart 2s infinite ease;
 }
 
+.heart2{
+    position: relative;
+    min-width: 30px;
+    top: -87%;
+    left: -28%;
+    animation: heart 2s infinite ease;
+}
+
+@keyframes heart{
+    0%, 100% {
+        transform: scale(0.8);
+    }
+    50%{
+        transform:scale(1.0);
+    }
+}
 
 article {
     box-sizing: border-box;
     width: 400px;
     padding: 40px;
 }
+
 
 form{
     min-width: 500px;
@@ -153,7 +155,7 @@ form{
     padding:30px;
     border-radius: 20px;
     background-color: rgb(255, 241, 251);
-    margin-top:20px;
+    margin-top:30px;
 }
 
 form label{
@@ -167,25 +169,26 @@ form label{
 form input{
     padding: 7px;
     border-radius: 10px;
-    border: 1px solid rgb(114,111,160,0.6); 
+    border: 1px solid rgb(147, 29, 70); 
     margin-bottom: 7px;
-}
+    border: 1.5px solid transparent;
+  }
 
 form input:hover{
-    border: 1.5px solid rgb(114,111,160); 
+    border: 1.5px solid rgb(147, 29, 70); 
 }
 
 form select{
     padding: 7px;
     border-radius: 10px;
-    border: 1px solid rgb(114,111,160,0.6); 
+    border: 1px solid rgb(147, 29, 70); 
     margin-bottom: 7px;
 }
 
 
 input[type="text"]:focus, input[type="number"]:focus{
     border: 1px solid #D6D9DC;
-    outline: solid rgb(114,111,160);
+    outline: solid rgb(147, 29, 70);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -212,6 +215,11 @@ p{
     color: rgb(69, 61, 53);
 }
 
+#section-3 {
+    background-color: rgb(171, 136, 136);
+    visibility: hidden;
+}
+
 #result-title{
     font-size: 4em;
     position: relative;
@@ -219,18 +227,18 @@ p{
 
 }
 
-#plate{
-    position:relative;
-    top: -180%;
-    left: 190%;
-    z-index: 1;
+#wine{
+    position: relative;
+    min-width: 750px;
+    top:-59%;
+    left: -70%;
 }
 
-#wine-spill{
-    position:relative;
-    top: -50.5%;
-    left: -40%;
-    z-index: 1;
+#plate{
+    position: relative;
+    min-width: 400px;
+    top:-180%;
+    left: 176%;
 }
 
 #output{
@@ -238,7 +246,7 @@ p{
     line-height: 1.4em;
     background-color: rgb(255, 241, 251);
     width:500px;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 30px;
     border-radius: 20px;
     position:relative;
@@ -247,10 +255,4 @@ p{
 
 #output p{
     padding-bottom: 10px;
-}
-
-#footer{
-    font-family: "Inconsolata", serif;
-    font-weight:300;
-    font-style: normal;
 }
