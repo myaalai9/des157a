@@ -31,29 +31,11 @@
      const emotion = document.querySelector('#emotion').value;
 
      nextBtn.addEventListener('click', function () {
-        let errorMessage = '';
+        
+        section1.style.visibility = 'hidden';
+        section2.style.visibility = 'visible';
+        section3.style.visibility = 'hidden';
     
-        if (dateName === '') {
-            errorMessage = 'Please enter a name for your date';
-        } else if (adj === '') {
-            errorMessage = 'Please provide an adjective';
-        } else if (clothing === '') {
-            errorMessage = 'Please provide an item of clothing';
-        } else if (num === '') {
-            errorMessage = 'Please provide a number';
-        } else if (food === '') {
-            errorMessage = 'Please provide a food item';
-        } else if (noun === '') {
-            errorMessage = 'Please provide a noun';
-        }
-    
-        if (errorMessage) {
-            alert(errorMessage);  // Show the first missing field
-        } else {
-            section1.style.visibility = 'hidden';
-            section2.style.visibility = 'visible';
-            section3.style.visibility = 'hidden';
-        }
     });
 
     restartBtn.addEventListener('click', function () {
