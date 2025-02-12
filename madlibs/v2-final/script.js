@@ -3,112 +3,112 @@
     'use strict';
     console.log('reading js'); 
 
-    const myForm = document.querySelectorAll('#madlib-questions'); 
+    const myForm = document.querySelectorAll('.madlib-questions'); 
+    // console.log(myForm);
     const formData = document.querySelectorAll('input[type=text]');
     const dropDown = document.querySelector('select'); 
-    const madlib =document.querySelector('#output');
+    const madlib = document.querySelector('#output');
+    // console.log(madlib)
 
     const section1 = document.querySelector('#section-1');
     const section2 = document.querySelector('#section-2');
     const section3 = document.querySelector('#section-3');
+    const body = document.querySelector('body'); 
 
-    const nextBtn = document.querySelector('#next-btn');
+    // const nextBtn = document.querySelector('#next-btn');
     const submitBtn = document.querySelector('#submit-btn');
     const restartBtn = document.querySelector('#restart-btn');
+
+    const dateName = document.querySelector('#date-name');
+    const adj = document.querySelector('#adjective');
+    const clothing = document.querySelector('#clothing');
+    const num = document.querySelector('#number');
+    const food = document.querySelector('#food');
+    const noun = document.querySelector('#noun');
+    const obj = document.querySelector('#object');
+    const opt = document.querySelector('#betterorworse')
+    const objPlural = document.querySelector('#object-plural');
+    const place = document.querySelector('#place');
+    const verb = document.querySelector('#verb');
+    const emotion = document.querySelector('#emotion');
+
+    let dateNameValue,adjValue,clothingValue,numValue,foodValue,nounValue,objValue,optValue,objPluralValue,placeValue,verbValue,emotionValue;
     
-    nextBtn.addEventListener('click', function (event) {
+    myForm[0].addEventListener('submit', function (event) {
         event.preventDefault();
+        console.log('submitted first form');
 
-        const dateName = document.querySelector('#date-name').value;
-        const adj = document.querySelector('#adjective').value;
-        const clothing = document.querySelector('#clothing').value;
-        const num = document.querySelector('#number').value;
-        const food = document.querySelector('#food').value;
-        const noun = document.querySelector('#noun').value;
+        dateNameValue = dateName.value;
+        console.log(dateNameValue);
 
-        if(dateName == ''){
-            alert('Please provide a name for your date');
-        }
-        else if(adj == ''){
-            alert('Please provide an adjective');
-        }
-        else if(clothing == ''){
-            alert('Please provide a item of clothing');
-        }
-        else if(num == ''){
-            alert('Please provide a number');
-        }
-        else if(food == ''){
-            alert('Please provide a food item');
-        }
-        else if(noun == ''){
-            alert('Please provide a noun');
-        }else{
-            section1.style.visibility = 'hidden';
-            section2.style.visibility = 'visible';
-            section3.style.visibility = 'hidden';
-        }
+        adjValue = adj.value;
+        console.log(adjValue);
+
+        clothingValue = clothing.value;
+        console.log(clothingValue);
+        
+        numValue = num.value;
+        console.log(numValue);
+
+        foodValue = food.value;
+        console.log(foodValue);
+
+        nounValue = noun.value;
+        console.log(nounValue);
+
+        section1.style.display = 'none';
+        section2.style.display = 'flex';
+        section3.style.display = 'none';
+   
     });
 
     submitBtn.addEventListener('click',function(event){
         event.preventDefault();
-        alert('form was submitted')
 
-        const obj = document.querySelector('#object').value;
-        const opt = document.querySelector('#betterorworse').value;
-        const objPlural = document.querySelector('#object-plural').value;
-        const place = document.querySelector('#place').value;
-        const verb = document.querySelector('#verb').value;
-        const emotion = document.querySelector('#emotion').value;
+        objValue = obj.value;
+        console.log(objValue);
 
+        optValue = opt.value;
+        console.log(optValue);
+
+        objPluralValue = objPlural.value;
+        console.log(objPluralValue);
         
-        section1.style.visibility = 'hidden';
-        section2.style.visibility = 'hidden';
-        section3.style.visibility = 'visible';
+        placeValue = place.value;
+        console.log(placeValue); 
 
-        if(obj == ''){
-            alert('Please provide an object');
+        verbValue = verb.value;
+        console.log(verbValue);
 
-        }
-        else if(opt == ''){
-            alert('Please choose an option');
-        }
-        else if(objPlural == ''){
-            alert('Please provide a plural object');
+        emotionValue = emotion.value;
+        console.log(emotionValue);
 
-        }
-        else if(place == ''){
-            alert('Please provide a place');
-        }
-        else if(verb == ''){
-            alert('Please provide a verb');
-        }
-        else if(emotion == ''){
-            alert('Please provide a emotion');
-        }else{
-            section1.style.visibility = 'block';
-            section2.style.visibility = 'hidden';
-            section3.style.visibility = 'hidden';
+        section1.style.display = 'none';
+        section2.style.display = 'none';
+        section3.style.display = 'flex';
+        body.style.backgroundColor = 'rgb(171, 136, 136)';
+        restartBtn.style.display = 'block';
 
 
-
-            document.querySelector('#madlib').innerHTML = `<p>When I arrived at the restaurant, I was excited to meet my date,${dateName} who I met online. They were wearing a ${adj} ${clothing}, which was a good sign, but things got weird soon.</p>
-
-            <p>First, they ordered ${num} plates of ${food} , then started asking me about ${noun} loudly in the middle of the restaurant. I tried to laugh it off but when they pulled out a ${obj} and said “I never leave home without this”. I was surprised and spilled my glass of wine.</p>
-                        
-            <p> From there it got ${opt}. They told me they collect ${objPlural} as a hobby and asked if I was interested in joining them to a museum in ${place} next time. When the bill came, they started to ${verb} non-stop, so I had to pay for everything.</p>
-                        
-            <p>When I left, they asked “Are you up for a second date?” I’m not sure if they meant it, but I was feeling ${emotion} about it.</p>`;
-        
-        }
+        madlib.innerHTML = `<p>When I arrived at the restaurant, I was excited to meet my date, ${dateNameValue} who I met online. They were wearing a ${adjValue} ${clothingValue}, which was a good sign, but things got weird soon.</p>
+            
+        <p>First, they ordered ${numValue} plates of ${foodValue} , then started asking me about ${nounValue} loudly in the middle of the restaurant. I tried to laugh it off but when they pulled out a ${objValue} and said “I never leave home without this”. I was surprised and spilled my glass of wine.</p>
+       
+        <p> From there it got ${optValue}. They told me they collect ${objPluralValue} as a hobby and asked if I was interested in joining them to a museum in ${placeValue} next time. When the bill came, they started to ${verbValue} non-stop, so I had to pay for everything.</p>
+            
+        <p>When I left, they asked “Are you up for a second date?” I’m not sure if they meant it, but I was feeling ${emotionValue} about it.</p>`; 
     
         
+        for(const eachField of formData){
+            eachField.value ='';
+        }
     });
 
     restartBtn.addEventListener('click', function () {
-        section3.style.visibility = 'hidden';
-        section2.style.visibility = 'hidden';
-        section1.style.visibility = 'visible';
+        section3.style.display = 'none';
+        section2.style.display = 'none';
+        section1.style.display = 'flex';
+        body.style.backgroundColor = ' rgb(56, 88, 50)';
     });
 
 
