@@ -54,6 +54,7 @@ article p{
     color: rgb(94, 83, 71);
     line-height: 1.4em;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 a{
@@ -86,6 +87,19 @@ article{
     border-radius: 10px;
     margin: 5%;
     padding: 5%;
+}
+
+figcaption{
+    font-family: "Forum", serif;
+    font-size: 0.9em;
+    color: rgb(94, 83, 71);
+    line-height: 1.4em;
+    padding-top: 5px;
+    margin: auto;
+}
+
+img{
+    border-radius: 10px;
 }
 
 footer{
