@@ -159,8 +159,8 @@ form{
     gap:5px;
     padding:30px;
     border-radius: 20px;
-    background-color: rgb(255, 241, 251);
     margin-top:25px;
+    background-color: rgb(255, 241, 251);
 }
 
 form label{
