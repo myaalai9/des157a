@@ -1,0 +1,48 @@
+/* Start Reset */
+
+*{
+    box-sizing: border-box; 
+}
+
+h1,h2,h3,p,ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul, nav ol{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+
+/* End Reset */
+
+body{
+    background-color: grey;
+    position:relative;
+}
+
+img{
+    padding-top: 50px;
+    margin:auto;
+}
+
+#beach{
+    filter: grayscale(80%) blur(2px);
+}
+
+#friend{
+    filter: grayscale(30%) blur(1px);
+    position: absolute;
+    margin: auto;
+    top: 130px;
+    left: 372px;
+    scale:1.2;
+}
+
+
+
