@@ -35,6 +35,7 @@
         collage.style.display = 'block';
         overlayImg.setAttribute('src','images/dad-on-beach-full.jpg'); // Changes img source
         overlayText.innerHTML = '<h2>1997: My dad and my brother on the beach.<br> He was just a little baby! </h2>';
+        button.style.top ='500px';
     });
 
     // Event listener for when photo of my dog,rover is clicked
@@ -57,6 +58,7 @@
         collage.style.display = 'block';
         overlayImg.setAttribute('src','images/boy-on-beach-full.jpg');// Changes img source
         overlayText.innerHTML = '<h2> 2000: My brother running on the beach, happily<br> playing with his football. I think<br> he was around 4 years old </h2>';
+        button.style.top ='460px';
     });
 
     // Event listener for when photo of brother and his friend is clicked
