@@ -28,17 +28,24 @@ body{
 }
 
 h1{
-    color: rgb(129,117,72);
+    color: rgb(171, 152, 85);
     font-family: "Cactus Classical Serif", serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 1.4em;
     position: absolute; 
     top:90px;
     left: 50px;
 }
 
-img{
-    cursor:pointer; 
+p{
+    color: rgb(171, 160, 121);
+    font-family: "Cactus Classical Serif", serif;
+    font-weight: 400;
+    font-size: 14px;
+    position:absolute;
+    top:600px;
+    left:400px;
 }
 
 #mom-on-beach{
@@ -51,7 +58,7 @@ img{
 
 #mom-on-beach:hover{
     cursor:pointer;
-    filter: grayscale(80%)blur(0.7px) drop-shadow(0 0 1rem rgb(243, 212, 156));
+    filter: grayscale(80%)blur(0.3px) drop-shadow(0 0 1rem rgb(243, 212, 156));
     z-index: 3;
     transform: scale(1.05);
 }
@@ -66,7 +73,7 @@ img{
 
 #dad-on-beach:hover{
     cursor:pointer;
-    filter: grayscale(80%)blur(0.7px) drop-shadow(0 0 1rem rgb(243, 212, 156));
+    filter: grayscale(80%)blur(0.3px) drop-shadow(0 0 1rem rgb(243, 212, 156));
     z-index: 3;
     transform: scale(1.05);
 }
@@ -81,7 +88,7 @@ img{
 
 #rover-on-beach:hover{
     cursor:pointer;
-    filter: grayscale(80%)blur(0.7px) drop-shadow(0 0 1rem rgb(243, 212, 156));
+    filter: grayscale(80%)blur(0.3px) drop-shadow(0 0 1rem rgb(243, 212, 156));
     z-index: 4;
     transform: scale(1.05);
 }
@@ -96,7 +103,7 @@ img{
 
 #boy-on-beach:hover{
     cursor:pointer;
-    filter: grayscale(80%)blur(0.7px) drop-shadow(0 0 1rem rgb(243, 212, 156));
+    filter: grayscale(80%)blur(0.3px) drop-shadow(0 0 1rem rgb(243, 212, 156));
     z-index: 5;
     transform: scale(1.05);
 }
@@ -112,7 +119,7 @@ img{
 
 #sunset-beach:hover{
     cursor:pointer;
-    filter: grayscale(80%)blur(0.7px) drop-shadow(0 0 1rem rgb(243, 212, 156));
+    filter: grayscale(90%)blur(0.3px) drop-shadow(0 0 1rem rgb(243, 212, 156));
     z-index: 4;
     transform: scale(1.05);
 }
@@ -128,7 +135,7 @@ img{
 
 #shell-picking:hover{
     cursor:pointer;
-    filter: grayscale(80%)blur(0.7px) drop-shadow(0 0 1rem rgb(243, 212, 156));
+    filter: grayscale(80%)blur(0.3px) drop-shadow(0 0 1rem rgb(243, 212, 156));
     z-index: 4;
     transform: scale(1.05);
 }
@@ -144,26 +151,29 @@ img{
 
 #beach-corner:hover{
     cursor:pointer;
-    filter: grayscale(80%)blur(0.7px) drop-shadow(0 0 1rem rgb(243, 212, 156));
+    filter: grayscale(80%)blur(0.3px) drop-shadow(0 0 1rem rgb(243, 212, 156));
     z-index: 4;
     transform: scale(1.05);
 }
 
 .show{
-    display:none;
+    display:block;
 }
 
 .hidden{
-    display:block;
+    display:none;
     z-index: 8;
 }
 
-/* #overlay1{
+#overlay-background{
+    display:none;
     position:absolute;
     background-color: rgba(0, 0, 0, 0.2);
-    width: 1200px;
-    height: 750px;
-} */
+    top:0; 
+    left:0;
+    width: 100vw;
+    height: 100vh;
+}
 
 #overlay{
     position:absolute;
@@ -172,13 +182,14 @@ img{
     border-radius: 7px;
     top: 100px; 
     left: 300px;
+    z-index: 10;
 }
 
 h2{
     color: rgb(129,117,72);
     font-family: "Indie Flower", serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 40px;
     text-align: center;
 }
