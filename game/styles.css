@@ -1,0 +1,45 @@
+/* Start Reset */
+
+*{
+    box-sizing: border-box; 
+}
+
+h1,h2,h3,p,ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul, nav ol{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+
+/* End Reset */
+
+body{
+    background-color: antiquewhite;
+    width: 1200px;
+}
+
+h1{
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    color: rgb(52, 47, 35);
+    font-size: 70px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+img{
+    margin:auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width:60%;
+    display: block;
+}
