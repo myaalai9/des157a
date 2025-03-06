@@ -1,0 +1,56 @@
+/* Start Reset */
+
+*{
+    box-sizing: border-box; 
+}
+
+h1,h2,h3,p,ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul, nav ol{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+
+/* End Reset */
+
+body{
+    background-color: rgb(30,47,15);
+}
+
+h1,h2{
+    font-family: "Freckle Face", system-ui;
+    font-weight: 400;
+    color: rgb(255,241,205);
+    text-align: center;
+}
+
+h1{
+    font-size: 110px; 
+}
+
+h3, p{
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    color: rgb(46,51,21);
+}
+
+.class{
+    display: none;
+}
+
+button{
+    font-family: "Dokdo", system-ui;
+    font-weight: 400;
+}
+
+
+
+

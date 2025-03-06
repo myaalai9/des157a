@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On! V1 Code</title>
+
+    <!--- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Dokdo&family=Freckle+Face&display=swap" rel="stylesheet">
+
+    <!--- Style CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!--- Java Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section id="start">
+            <h1>Ladybug<br>Hunt</h1>
+        
+            <button id="start-btn" class="btn">Start</button>
+        </section>
+
+        <section id="instructions" class="hidden">
+            <h2>Ladybug<br>Hunt</h2>
+            <h3>Game Rules</h3>
+            <p>With magnifying glasses in hand, players take turn looking for the ladybugs with the most spots as possible. The more spots a ladybug has, the rarer it is and the more points you earn! After each search, players can choose to  test their luck looking for more or take a break and let their opponents to have a go to keep their score safe, But be careful—hidden among the ladybugs are pesky critters!</p>
+
+            <p>If you stumble upon one, your turn ends and the other player gets a chance to hunt. Disaster strikes if you run into two unwanted critters in a single round! All your hard-earned points scurry away, leaving you back at zero. Guess the bugs weren’t on your side this time!</p>
+                
+            <p>The first player to reach 30 points or more wins and is declared as the Ladybug Whisperer!<br>Ready, set, go!</p>
+
+            <button id="close-btn">X</button>  
+        </section>
+
+        <section id="game" class="hidden">
+            <h2>Ladybug<br>Hunt</h2>
+
+            <p class="player">Player 1</p>
+            <P id="player1-score" class="playerscore">00</P>
+            <p class="player">Player 2</p>
+            <P id="player2-score" class="playerscore">00</P>
+
+            <h4></h4>
+
+            <button id="restart-btn" class="btn">restart?</button>
+            <button id="tutorial-btn" class="btn">how to play</button>
+
+            <button id="roll-btn" class="side-btn">look for more</button>
+            <button id="pass-btn" class="side-btn">take a break</button>        
+        </section>
+    </main>
+</body>
+</html>
