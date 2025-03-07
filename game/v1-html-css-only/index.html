@@ -45,12 +45,22 @@
         <section id="game" class="hidden">
             <h2>Ladybug<br>Hunt</h2>
 
-            <p class="player">Player 1</p>
-            <P id="player1-score" class="playerscore">00</P>
-            <p class="player">Player 2</p>
-            <P id="player2-score" class="playerscore">00</P>
+            <div class="score-keeper">
+                <div id="player1" class="player">
+                    <p id="player1-text" class="playertext">Player 1</p>
+                    <P id="player1-score" class="playerscore">00</P>
+                </div>
+            
+                <div id="player2" class="player">
+                    <p id="player2-text" class="playertext">Player 2</p>
+                    <P id="player2-score" class="playerscore">00</P>
+                </div>
+            </div>
 
             <h4>Player 1's Turn</h4>
+
+            <img id="magnifying-glass1" src="images/magnifying-glass1.svg" alt="magnifying-glass1" width="391">
+            <img id="magnifying-glass2" src="images/magnifying-glass2.svg" alt="magnifying-glass2" width="391">
 
             <button id="restart-btn" class="side-btn">restart?</button>
             <button id="tutorial-btn" class="side-btn">how to play</button>
