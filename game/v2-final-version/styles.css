@@ -1,0 +1,296 @@
+/* Start Reset */
+
+*{
+    box-sizing: border-box; 
+}
+
+h1,h2,h3,p,ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul, nav ol{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+
+/* End Reset */
+
+body{
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1,h2{
+    font-family: "Freckle Face", system-ui;
+    font-weight: 400;
+    line-height: 0.9em;
+    color: rgb(255,241,205);
+    text-align: center;
+}
+
+h1{
+    font-size: 110px;
+    position:absolute; 
+    top: 250px;
+    left: 420px;
+}
+
+h3, p{
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    color: rgb(46,51,21);
+}
+
+h4{
+    font-family: "Dokdo", system-ui;
+    font-size: 48px;
+    color: rgb(255,241,205);
+    position:absolute; 
+    top: 500px;
+    left: 440px;
+}
+
+#start{
+    display: block;
+}
+
+#instructions{
+    display: none;
+}
+
+#game{
+    display: none;
+}
+
+button{
+    font-family: "Dokdo", system-ui;
+    font-weight: 400;
+    font-size: 28px;
+    border-radius: 50px;
+    color: rgb(94,79,49);
+    background-color: antiquewhite;
+}
+
+#start-btn{
+    font-size:30px;
+    padding: 2px 40px;
+    border-radius: 20px;
+    position:absolute; 
+    top: 470px;
+    left: 540px;
+}
+
+#start-btn:hover{
+    color: antiquewhite;
+    background-color: rgb(94,79,49);
+    cursor:pointer; 
+}
+
+h2{
+    font-size: 88px;
+    position:absolute; 
+    top: 65px;
+    left: 445px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#rules{
+    background-color: rgb(255,248,231,0.9);
+    width: 70%;
+    padding: 20px 40px;
+    border-radius: 20px; 
+    border: 5px solid rgb(122,90,25);
+    position:absolute; 
+    top: 260px;
+    left: 180px;  
+}
+
+.rule-text{
+    margin-bottom: 20px;
+    font-size: 19px;
+    text-align: left;
+}
+
+#continue-btn{
+    position: absolute; 
+    padding: 0px 40px;
+    border: 4px solid  rgb(122,90,25);
+    top: 350px;
+    left: 330px;  
+    font-size: 30px;
+}
+
+#continue-btn:hover{
+    background-color:rgb(122,90,25) ;
+    color:rgb(255,248,231);
+}
+
+#worm{
+    position: absolute;
+    top: -20px;
+    left: -20px; 
+}
+
+#ladybug-4{
+    position: absolute; 
+    top: 320px;
+    left: 780px;  
+}
+
+
+.side-btn{
+    background-color: rgb(195,211,148);
+    border:none; 
+}
+
+#restart-btn{
+    position: absolute;
+    top: 60px;
+    left: 980px;
+    padding: 0px 40px;
+}
+
+#tutorial-btn{
+    position: absolute;
+    top: 110px;
+    left: 980px;
+    padding: 0px 23px;
+}
+
+.btn{
+    border:none; 
+}
+
+#roll-btn{
+    position: absolute;
+    top: 650px;
+    left: 380px;
+    padding:3px 23px;
+}
+
+#pass-btn{
+    position: absolute;
+    top:650px;
+    left: 610px;
+    padding: 3px 25px;
+}
+
+
+#magnifying-glass1{
+    position: absolute;
+    top:220px;
+    left:180px;
+    animation: wiggle1 3s ease 1;
+}
+
+@keyframes wiggle1 {
+    0%,100%{
+    transform: rotate(0);
+    }
+    15% {
+    transform: rotate(-15deg);
+    filter:blur(2px);
+    }
+    20% {
+    transform: rotate(10deg);
+    filter:blur(3px);
+    }
+    25% {
+    transform: rotate(-10deg);
+    filter:blur(2px);
+    }
+    30% {
+    transform: rotate(6deg);
+    filter:blur(2px);
+    }
+    35% {
+    transform: rotate(-4deg);
+    filter:blur(1px);
+    }
+    45% {
+    transform: rotate(-2deg);
+    filter:blur(1px);
+    }
+}
+
+#magnifying-glass2{
+    position: absolute;
+    top:220px;
+    left:630px;
+    animation: wiggle2 3s ease 1;
+}
+
+@keyframes wiggle2 {
+    0%,100%{
+    transform: rotate(0);
+    }
+    15% {
+    transform: rotate(15deg);
+    filter:blur(2px);
+    }
+    20% {
+    transform: rotate(-10deg);
+    filter:blur(3px);
+    }
+    25% {
+    transform: rotate(10deg);
+    filter:blur(2px);
+    }
+    30% {
+    transform: rotate(-6deg);
+    filter:blur(2px);
+    }
+    35% {
+    transform: rotate(4deg);
+    filter:blur(1px);
+    }
+    45% {
+    transform: rotate(2deg);
+    filter:blur(1px);
+    }
+}
+
+.score-keeper p {
+    color: rgb(255,248,231);
+}
+
+.playertext{
+    font-size: 42px;
+}
+
+.playerscore{
+    font-size: 100px;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#player1{
+    position: absolute;
+    top:220px;
+    left:50px;
+}
+
+#player2{
+    position: absolute;
+    top:220px;
+    left:1000px;
+}
+
+

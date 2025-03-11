@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On!</title>
+
+    <!--- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Dokdo&family=Freckle+Face&display=swap" rel="stylesheet">
+
+    <!--- Style CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!--- Java Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section id="start">
+            <h1>Ladybug<br>Hunt</h1>
+        
+            <button id="start-btn" class="btn">Start</button>
+        </section>
+
+        <section id="instructions" class="hidden">
+            <h2>Ladybug<br>Hunt</h2>
+            <div id="rules">
+                <h3>Game Rules</h3>
+                <p class="rule-text">With magnifying glasses in hand, players take turn looking for the ladybugs with the most spots as possible. The more spots a ladybug has, the rarer it is and the more points you earn! After each search, players can choose to  test their luck looking for more or take a break and let their opponents to have a go to keep their score safe, But be careful—hidden among the ladybugs are pesky critters!</p>
+
+                <p class="rule-text">If you stumble upon one, your turn ends and the other player gets a chance to hunt. Disaster strikes if you run into two unwanted critters in a single round! All your hard-earned points scurry away, leaving you back at zero. Guess the bugs weren’t on your side this time!</p>
+                    
+                <p class="rule-text">The first player to reach 30 points or more wins and is declared as the Ladybug Whisperer!<br>Ready, set, go!</p>
+                <img id="worm" src="images/worm.svg" alt="worm" width="100">
+                <img id="ladybug-4" src="images/ladybug4.svg" alt="ladybug-4" width="60">
+            <div>
+            <button id="continue-btn">continue</button>  
+        </section>
+
+        <section id="game" class="hidden">
+            <h2>Ladybug<br>Hunt</h2>
+
+            <div class="score-keeper">
+                <div id="player1" class="player">
+                    <p id="player1-text" class="playertext">Player 1</p>
+                    <P id="player1-score" class="playerscore">00</P>
+                </div>
+            
+                <div id="player2" class="player">
+                    <p id="player2-text" class="playertext">Player 2</p>
+                    <P id="player2-score" class="playerscore">00</P>
+                </div>
+            </div>
+
+            
+
+            <img class="magnifying-glass" id="magnifying-glass1"id="magnifying-glass1" src="images/magnifying-glass1.svg" alt="magnifying-glass1" width="391">
+            <img class="magnifying-glass" id="magnifying-glass2" src="images/magnifying-glass2.svg" alt="magnifying-glass2" width="391">
+
+            <button id="restart-btn" class="side-btn">restart?</button>
+            <button id="tutorial-btn" class="side-btn">how to play</button>
+
+            <div id="gamecontrol">
+                <h4>Player 1's Turn</h4>
+                <button id="roll-btn" class="btn">look for more</button>
+                <button id="pass-btn" class="btn">take a break</button>    
+            </div>    
+        </section>
+    </main>
+</body>
+</html>
