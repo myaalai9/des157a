@@ -26,12 +26,6 @@
         inst.style.display = 'block';
         game.style.display = 'none';
 
-        // Randomly set the gameData.index here which will choose the player
-        gameData.index = Math.round(Math.random());
-        console.log(gameData.index);
-
-        setUpTurn();
-
     });
 
     // The close button for rules 
