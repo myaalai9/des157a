@@ -51,11 +51,9 @@ h3, p{
 
 h4{
     font-family: "Dokdo", system-ui;
-    font-size: 48px;
+    font-size: 40px;
     color: rgb(255,241,205);
-    position:absolute; 
-    top: 500px;
-    left: 440px;
+    margin: 20px 0px;
 }
 
 #start{
@@ -292,5 +290,26 @@ h3{
     top:220px;
     left:1000px;
 }
+
+#gamecontrol{
+    position: absolute;
+    top: 560px;
+    left: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+#roll{
+    width:280px;
+    border: none; 
+    padding: 3px 2px;
+    margin: auto; 
+}
+
+#roll:hover{
+    background-color:rgb(122,90,25) ;
+    color:rgb(255,248,231);
+}
+
 
 
