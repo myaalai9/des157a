@@ -118,6 +118,8 @@
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             gameControl.innerHTML = ''; 
             gameControl.innerHTML +=`<h4 id="yikes">Yikes, a worm!<br>Switching to ${gameData.players[gameData.index]}<h4>`;
+            document.querySelector('#yikes').style.animation= 'appear 3s ease 1';
+            document.querySelector('#yikes').style.animationDelay= '2s';
             // wait 3 seconds...
             setTimeout(setUpTurn, 3000);  
         }
