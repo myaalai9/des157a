@@ -307,6 +307,23 @@ h3{
     }
 }
 
+@keyframes opacity {
+    0%{
+    opacity: 0;
+    }
+    25% {
+    opacity: 0.2;
+    }
+    40% {
+    opacity: 0.5;
+    }
+    75% {
+    opacity: 0.8;
+    }
+    100% {
+    opacity: 1;
+    }
+}
 
 
 .score-keeper p {
@@ -414,6 +431,7 @@ h3{
     width: 500px;
     top: 30px;
     left: -100px;
+    opacity: 0;
 }
 
 #wormeyes{

@@ -118,10 +118,11 @@
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             gameControl.innerHTML = ''; 
             gameControl.innerHTML +=`<h4 id="yikes">Yikes, a worm!<br>Switching to ${gameData.players[gameData.index]}<h4>`;
-            document.querySelector('#yikes').style.animation= 'appear 3s ease 1';
-            document.querySelector('#yikes').style.animationDelay= '2s';
-            // wait 3 seconds...
-            setTimeout(setUpTurn, 3000);  
+            document.querySelector('#yikes').style.animation= 'opacity 1s ease-in';
+            document.querySelector('#yikes').style.animationDelay= '1s';
+            document.querySelector('#yikes').style.animationFillMode= 'forwards';
+            // wait 4 seconds...
+            setTimeout(setUpTurn, 4000);  
         }
 
         // if neither die is a 1
@@ -158,15 +159,15 @@
             } points! </h4>`; 
             document.querySelector('#winning').style.animation = 'scale 0.3s ease 5';
             gameControl.innerHTML += '<button id="newgame">Start a New Game?</button>'; 
+
+            document.querySelector('#newgame').addEventListener('click', function(){
+                location.reload(); // refresh the page 
+            });
         } 
         else{
             // show Current score function here
             showCurrentScore(); 
         }
-
-        document.querySelector('#newgame').addEventListener('click', function(){
-            location.reload(); // refresh the page 
-        });
     
     }
 
