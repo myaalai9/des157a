@@ -5,6 +5,7 @@
     //sounds
     const bgMusic = new Audio('audio/jungle.mp3');
     const discovery = new Audio('audio/discovery.mp3');
+    const winnerMusic = new Audio('audio/winner.mp3');
 
     const start = document.querySelector('#start');
     const inst = document.querySelector('#instructions');
@@ -159,6 +160,8 @@
             } points! </h4>`; 
             document.querySelector('#winning').style.animation = 'scale 0.3s ease 5';
             gameControl.innerHTML += '<button id="newgame">Start a New Game?</button>'; 
+
+            winnerMusic.play();
 
             document.querySelector('#newgame').addEventListener('click', function(){
                 location.reload(); // refresh the page 
